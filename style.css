@@ -37,18 +37,44 @@ estiverem usando-a serão modificados ao mesmo tempo*/
     partir de agora será conforme a caixa em si*/
 }
 
-#container{ /*é a div do body*/
+/*#container{ /*é a div do body*/
     /*BOX MODEL*/
-    background-color: var(--color-primary);
-    border: 1px solid var(--color-primary); /*solid irá formar uma linha mostrando a delimitação da caixa*/
-    padding: 40px; /*as margens por dentro da caixa*/
-    margin: 60px;  /*as margens da página*/
-    width: 300px;  /*a largura da caixa*/
-    height: 300px; /*a altura da caixa*/
+   
+    /*border: 1px solid var(--color-primary); /*solid irá formar uma linha mostrando a delimitação da caixa*/
+   /* padding: 40px; /*as margens por dentro da caixa*/
+    /*margin: 60px;  /*as margens da página*/
+    /*width: 300px;  /*a largura da caixa*/
+    /*height: 300px; /*a altura da caixa*/
+/*}*/
+
+html, body{ /* boas práticas de programação */
+    height: 100vh; /* view height*/
 }
 
 body{
+    background: var(--color-background);
+    display: flex; /* deixa a exibição flexível */
+    /* os itens abaixo só serão disponíveis se tiver o display: flex;*/
     
+    align-items: center; /* alinha na horizontal, no centro */
+    justify-content: center; /* alinha na vertical, no centro */
 }
+
+body, input, button, textarea{
+    font: 500 1.6rem Poppins;
+    color: var(--color-text-base);
+    /*ou
+    font-weight:500;
+    font-size: 1.6rem;
+    font-family: Poppins;
+    */
+}
+
+#container{
+    width: 90vw;
+    max-width: 700px;
+}
+
+
     
 
