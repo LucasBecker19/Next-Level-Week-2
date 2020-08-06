@@ -52,7 +52,6 @@ html, body{ /* boas práticas de programação */
 }
 
 body{
-    background: var(--color-background);
     display: flex; /* deixa a exibição flexível */
     /* os itens abaixo só serão disponíveis se tiver o display: flex;*/
     
